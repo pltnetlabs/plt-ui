@@ -14,12 +14,12 @@ export function GetPeers() {
   return window['go']['main']['App']['GetPeers']();
 }
 
-export function GetUnconfirmedTxs(arg1) {
-  return window['go']['main']['App']['GetUnconfirmedTxs'](arg1);
-}
-
 export function GetRPCBaseURL() {
   return window['go']['main']['App']['GetRPCBaseURL']();
+}
+
+export function GetUnconfirmedTxs(arg1) {
+  return window['go']['main']['App']['GetUnconfirmedTxs'](arg1);
 }
 
 export function SetRPCBaseURL(arg1) {
