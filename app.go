@@ -49,6 +49,11 @@ func (a *App) SetRPCBaseURL(baseURL string) {
 	a.client.SetBaseURL(baseURL)
 }
 
+// GetRPCBaseURL returns the currently configured RPC base URL.
+func (a *App) GetRPCBaseURL() string {
+	return a.client.BaseURL()
+}
+
 func (a *App) contextOrBackground() context.Context {
 	if a.ctx != nil {
 		return a.ctx

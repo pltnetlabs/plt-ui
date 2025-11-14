@@ -5,10 +5,11 @@ import Transactions from './pages/Transactions';
 import Send from './pages/Send';
 import Receive from './pages/Receive';
 import NodeDebug from './pages/NodeDebug';
+import Settings from './pages/Settings';
 import { SetRPCBaseURL } from '../wailsjs/go/main/App';
 import './App.css';
 
-export type TabKey = 'overview' | 'transactions' | 'send' | 'receive' | 'debug';
+export type TabKey = 'overview' | 'transactions' | 'send' | 'receive' | 'debug' | 'settings';
 
 const tabItems: { key: TabKey; label: string }[] = [
   { key: 'overview', label: 'Overview' },
@@ -16,6 +17,7 @@ const tabItems: { key: TabKey; label: string }[] = [
   { key: 'send', label: 'Send' },
   { key: 'receive', label: 'Receive' },
   { key: 'debug', label: 'Node / Debug' },
+  { key: 'settings', label: 'Settings' },
 ];
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
         return <Receive />;
       case 'debug':
         return <NodeDebug />;
+      case 'settings':
+        return <Settings />;
       case 'overview':
       default:
         return <Overview />;

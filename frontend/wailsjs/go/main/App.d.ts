@@ -10,4 +10,6 @@ export function GetPeers():Promise<Array<main.Peer>>;
 
 export function GetUnconfirmedTxs(arg1:number):Promise<main.UnconfirmedTxs>;
 
+export function GetRPCBaseURL():Promise<string>;
+
 export function SetRPCBaseURL(arg1:string):Promise<void>;

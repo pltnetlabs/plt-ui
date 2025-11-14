@@ -201,6 +201,12 @@ th {
   gap: 16px;
 }
 
+.button-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .form-card label {
   display: flex;
   flex-direction: column;

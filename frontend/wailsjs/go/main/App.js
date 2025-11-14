@@ -18,6 +18,10 @@ export function GetUnconfirmedTxs(arg1) {
   return window['go']['main']['App']['GetUnconfirmedTxs'](arg1);
 }
 
+export function GetRPCBaseURL() {
+  return window['go']['main']['App']['GetRPCBaseURL']();
+}
+
 export function SetRPCBaseURL(arg1) {
   return window['go']['main']['App']['SetRPCBaseURL'](arg1);
 }
